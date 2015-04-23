@@ -1,5 +1,6 @@
 ﻿module Digest.Tests.ArticleTests
 
+open System
 open Digest
 open FsUnit.Xunit
 open Xunit
@@ -20,3 +21,9 @@ let ``Article.GetLinks does not return a URI in the body of a document, just tha
     let links = Article.ExtractLinks(article) |> Seq.map(fun l -> l.AbsoluteUri)
     links |> Seq.length |> should equal 1
     links |> should contain "http://google.com/"
+
+[<Fact>]
+let ``Creating an Article from a URI gets the content of the article by downloading the webpage``() =
+    let uri = new Uri("http://example.com")
+    let article = Article.Create(uri) |> Async.RunSynchronously
+    article.Text.Contains "<h1>Example Domain</h1>" |> should be True
