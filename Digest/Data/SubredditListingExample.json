@@ -1,0 +1,1486 @@
+{
+  "kind":  "Listing",
+   "data":  {
+    "modhash":  "",
+     "children":  [
+      {
+        "kind":  "t3",
+         "data":  {
+          "domain":  "github.com",
+           "banned_by":  null,
+           "media_embed":  {
+            
+          },
+           "subreddit":  "programming",
+           "selftext_html":  null,
+           "selftext":  "",
+           "likes":  null,
+           "user_reports":  [
+            
+          ],
+           "secure_media":  null,
+           "link_flair_text":  null,
+           "id":  "33sl39",
+           "gilded":  0,
+           "archived":  false,
+           "clicked":  false,
+           "report_reasons":  null,
+           "author":  "allyourprivacy",
+           "num_comments":  26,
+           "score":  376,
+           "approved_by":  null,
+           "over_18":  false,
+           "hidden":  false,
+           "thumbnail":  "",
+           "subreddit_id":  "t5_2fwo",
+           "edited":  false,
+           "link_flair_css_class":  null,
+           "author_flair_css_class":  null,
+           "downs":  0,
+           "secure_media_embed":  {
+            
+          },
+           "saved":  false,
+           "stickied":  false,
+           "is_self":  false,
+           "permalink":  "/r/programming/comments/33sl39/maintainership_transfer_of_ublock_post_mortem/",
+           "name":  "t3_33sl39",
+           "created":  1429968425.0,
+           "url":  "https: //github.com/gorhill/uBlock/wiki/Maintainership-transfer-of-uBlock%3A-post-mortem",
+           "author_flair_text":  null,
+           "title":  "Maintainership transfer of uBlock:  post mortem",
+           "created_utc":  1429939625.0,
+           "distinguished":  null,
+           "media":  null,
+           "mod_reports":  [
+            
+          ],
+           "visited":  false,
+           "num_reports":  null,
+           "ups":  376
+        }
+      },
+       {
+        "kind":  "t3",
+         "data":  {
+          "domain":  "blog.rust-lang.org",
+           "banned_by":  null,
+           "media_embed":  {
+            
+          },
+           "subreddit":  "programming",
+           "selftext_html":  null,
+           "selftext":  "",
+           "likes":  null,
+           "user_reports":  [
+            
+          ],
+           "secure_media":  null,
+           "link_flair_text":  null,
+           "id":  "33qd8g",
+           "gilded":  0,
+           "archived":  false,
+           "clicked":  false,
+           "report_reasons":  null,
+           "author":  "steveklabnik1",
+           "num_comments":  82,
+           "score":  354,
+           "approved_by":  null,
+           "over_18":  false,
+           "hidden":  false,
+           "thumbnail":  "",
+           "subreddit_id":  "t5_2fwo",
+           "edited":  false,
+           "link_flair_css_class":  null,
+           "author_flair_css_class":  null,
+           "downs":  0,
+           "secure_media_embed":  {
+            
+          },
+           "saved":  false,
+           "stickied":  false,
+           "is_self":  false,
+           "permalink":  "/r/programming/comments/33qd8g/rust_once_run_anywhere/",
+           "name":  "t3_33qd8g",
+           "created":  1429924927.0,
+           "url":  "http: //blog.rust-lang.org/2015/04/24/Rust-Once-Run-Everywhere.html",
+           "author_flair_text":  null,
+           "title":  "Rust once,
+           run anywhere",
+           "created_utc":  1429896127.0,
+           "distinguished":  null,
+           "media":  null,
+           "mod_reports":  [
+            
+          ],
+           "visited":  false,
+           "num_reports":  null,
+           "ups":  354
+        }
+      },
+       {
+        "kind":  "t3",
+         "data":  {
+          "domain":  "blog.dancrisan.com",
+           "banned_by":  null,
+           "media_embed":  {
+            
+          },
+           "subreddit":  "programming",
+           "selftext_html":  null,
+           "selftext":  "",
+           "likes":  null,
+           "user_reports":  [
+            
+          ],
+           "secure_media":  null,
+           "link_flair_text":  null,
+           "id":  "33s9sq",
+           "gilded":  0,
+           "archived":  false,
+           "clicked":  false,
+           "report_reasons":  null,
+           "author":  "RockDiesel",
+           "num_comments":  2,
+           "score":  19,
+           "approved_by":  null,
+           "over_18":  false,
+           "hidden":  false,
+           "thumbnail":  "",
+           "subreddit_id":  "t5_2fwo",
+           "edited":  false,
+           "link_flair_css_class":  null,
+           "author_flair_css_class":  null,
+           "downs":  0,
+           "secure_media_embed":  {
+            
+          },
+           "saved":  false,
+           "stickied":  false,
+           "is_self":  false,
+           "permalink":  "/r/programming/comments/33s9sq/a_tiny_intro_to_database_systems/",
+           "name":  "t3_33s9sq",
+           "created":  1429960647.0,
+           "url":  "http: //blog.dancrisan.com/a-tiny-intro-to-database-systems",
+           "author_flair_text":  null,
+           "title":  "A Tiny Intro to Database Systems",
+           "created_utc":  1429931847.0,
+           "distinguished":  null,
+           "media":  null,
+           "mod_reports":  [
+            
+          ],
+           "visited":  false,
+           "num_reports":  null,
+           "ups":  19
+        }
+      },
+       {
+        "kind":  "t3",
+         "data":  {
+          "domain":  "jtra.cz",
+           "banned_by":  null,
+           "media_embed":  {
+            
+          },
+           "subreddit":  "programming",
+           "selftext_html":  null,
+           "selftext":  "",
+           "likes":  null,
+           "user_reports":  [
+            
+          ],
+           "secure_media":  null,
+           "link_flair_text":  null,
+           "id":  "33prsl",
+           "gilded":  0,
+           "archived":  false,
+           "clicked":  false,
+           "report_reasons":  null,
+           "author":  "jtra",
+           "num_comments":  25,
+           "score":  192,
+           "approved_by":  null,
+           "over_18":  false,
+           "hidden":  false,
+           "thumbnail":  "",
+           "subreddit_id":  "t5_2fwo",
+           "edited":  false,
+           "link_flair_css_class":  null,
+           "author_flair_css_class":  null,
+           "downs":  0,
+           "secure_media_embed":  {
+            
+          },
+           "saved":  false,
+           "stickied":  false,
+           "is_self":  false,
+           "permalink":  "/r/programming/comments/33prsl/recently_mentioned_tuppers_everything_formula/",
+           "name":  "t3_33prsl",
+           "created":  1429915111.0,
+           "url":  "http: //jtra.cz/stuff/essays/math-self-reference/index.html",
+           "author_flair_text":  null,
+           "title":  "Recently mentioned Tupper's 'everything' formula (actually just a bitmap graph for supplied value) is not truly self-referential. My formula is. It contains bitmap graphing,
+           a font with digits and a decimal printer which can do true self-reference where everything is included.",
+           "created_utc":  1429886311.0,
+           "distinguished":  null,
+           "media":  null,
+           "mod_reports":  [
+            
+          ],
+           "visited":  false,
+           "num_reports":  null,
+           "ups":  192
+        }
+      },
+       {
+        "kind":  "t3",
+         "data":  {
+          "domain":  "github.com",
+           "banned_by":  null,
+           "media_embed":  {
+            
+          },
+           "subreddit":  "programming",
+           "selftext_html":  null,
+           "selftext":  "",
+           "likes":  null,
+           "user_reports":  [
+            
+          ],
+           "secure_media":  null,
+           "link_flair_text":  null,
+           "id":  "33ooy3",
+           "gilded":  0,
+           "archived":  false,
+           "clicked":  false,
+           "report_reasons":  null,
+           "author":  "learc83",
+           "num_comments":  163,
+           "score":  870,
+           "approved_by":  null,
+           "over_18":  false,
+           "hidden":  false,
+           "thumbnail":  "",
+           "subreddit_id":  "t5_2fwo",
+           "edited":  false,
+           "link_flair_css_class":  null,
+           "author_flair_css_class":  null,
+           "downs":  0,
+           "secure_media_embed":  {
+            
+          },
+           "saved":  false,
+           "stickied":  false,
+           "is_self":  false,
+           "permalink":  "/r/programming/comments/33ooy3/microsoft_net_coreclr_is_now_running_on_freebsd/",
+           "name":  "t3_33ooy3",
+           "created":  1429885725.0,
+           "url":  "https: //github.com/dotnet/coreclr/issues/793",
+           "author_flair_text":  null,
+           "title":  "Microsoft .NET CoreCLR is now running on FreeBSD",
+           "created_utc":  1429856925.0,
+           "distinguished":  null,
+           "media":  null,
+           "mod_reports":  [
+            
+          ],
+           "visited":  false,
+           "num_reports":  null,
+           "ups":  870
+        }
+      },
+       {
+        "kind":  "t3",
+         "data":  {
+          "domain":  "erikschierboom.com",
+           "banned_by":  null,
+           "media_embed":  {
+            
+          },
+           "subreddit":  "programming",
+           "selftext_html":  null,
+           "selftext":  "",
+           "likes":  null,
+           "user_reports":  [
+            
+          ],
+           "secure_media":  null,
+           "link_flair_text":  null,
+           "id":  "33t5hv",
+           "gilded":  0,
+           "archived":  false,
+           "clicked":  false,
+           "report_reasons":  null,
+           "author":  "ErikSchierboom",
+           "num_comments":  0,
+           "score":  3,
+           "approved_by":  null,
+           "over_18":  false,
+           "hidden":  false,
+           "thumbnail":  "",
+           "subreddit_id":  "t5_2fwo",
+           "edited":  false,
+           "link_flair_css_class":  null,
+           "author_flair_css_class":  null,
+           "downs":  0,
+           "secure_media_embed":  {
+            
+          },
+           "saved":  false,
+           "stickied":  false,
+           "is_self":  false,
+           "permalink":  "/r/programming/comments/33t5hv/using_knockout_with_existing_html_content/",
+           "name":  "t3_33t5hv",
+           "created":  1429988573.0,
+           "url":  "http: //www.erikschierboom.com/2015/04/25/knockout-pre-rendered/",
+           "author_flair_text":  null,
+           "title":  "Using Knockout with existing HTML content",
+           "created_utc":  1429959773.0,
+           "distinguished":  null,
+           "media":  null,
+           "mod_reports":  [
+            
+          ],
+           "visited":  false,
+           "num_reports":  null,
+           "ups":  3
+        }
+      },
+       {
+        "kind":  "t3",
+         "data":  {
+          "domain":  "liclipse.blogspot.com.br",
+           "banned_by":  null,
+           "media_embed":  {
+            
+          },
+           "subreddit":  "programming",
+           "selftext_html":  null,
+           "selftext":  "",
+           "likes":  null,
+           "user_reports":  [
+            
+          ],
+           "secure_media":  null,
+           "link_flair_text":  null,
+           "id":  "33sxvj",
+           "gilded":  0,
+           "archived":  false,
+           "clicked":  false,
+           "report_reasons":  null,
+           "author":  "_Sharp_",
+           "num_comments":  0,
+           "score":  5,
+           "approved_by":  null,
+           "over_18":  false,
+           "hidden":  false,
+           "thumbnail":  "",
+           "subreddit_id":  "t5_2fwo",
+           "edited":  false,
+           "link_flair_css_class":  null,
+           "author_flair_css_class":  null,
+           "downs":  0,
+           "secure_media_embed":  {
+            
+          },
+           "saved":  false,
+           "stickied":  false,
+           "is_self":  false,
+           "permalink":  "/r/programming/comments/33sxvj/liclipse_ide_20_released/",
+           "name":  "t3_33sxvj",
+           "created":  1429980327.0,
+           "url":  "http: //liclipse.blogspot.com.br/2015/04/liclipse-20-released.html",
+           "author_flair_text":  null,
+           "title":  "LiClipse IDE 2.0 released",
+           "created_utc":  1429951527.0,
+           "distinguished":  null,
+           "media":  null,
+           "mod_reports":  [
+            
+          ],
+           "visited":  false,
+           "num_reports":  null,
+           "ups":  5
+        }
+      },
+       {
+        "kind":  "t3",
+         "data":  {
+          "domain":  "nbviewer.ipython.org",
+           "banned_by":  null,
+           "media_embed":  {
+            
+          },
+           "subreddit":  "programming",
+           "selftext_html":  null,
+           "selftext":  "",
+           "likes":  null,
+           "user_reports":  [
+            
+          ],
+           "secure_media":  null,
+           "link_flair_text":  null,
+           "id":  "33sjx9",
+           "gilded":  0,
+           "archived":  false,
+           "clicked":  false,
+           "report_reasons":  null,
+           "author":  "yomritoyj",
+           "num_comments":  3,
+           "score":  10,
+           "approved_by":  null,
+           "over_18":  false,
+           "hidden":  false,
+           "thumbnail":  "",
+           "subreddit_id":  "t5_2fwo",
+           "edited":  false,
+           "link_flair_css_class":  null,
+           "author_flair_css_class":  null,
+           "downs":  0,
+           "secure_media_embed":  {
+            
+          },
+           "saved":  false,
+           "stickied":  false,
+           "is_self":  false,
+           "permalink":  "/r/programming/comments/33sjx9/peter_norvig_solves_cheryls_birthday_problem_in/",
+           "name":  "t3_33sjx9",
+           "created":  1429967497.0,
+           "url":  "http: //nbviewer.ipython.org/url/norvig.com/ipython/Cheryl.ipynb",
+           "author_flair_text":  null,
+           "title":  "Peter Norvig solves Cheryl's birthday problem in Python",
+           "created_utc":  1429938697.0,
+           "distinguished":  null,
+           "media":  null,
+           "mod_reports":  [
+            
+          ],
+           "visited":  false,
+           "num_reports":  null,
+           "ups":  10
+        }
+      },
+       {
+        "kind":  "t3",
+         "data":  {
+          "domain":  "cacm.acm.org",
+           "banned_by":  null,
+           "media_embed":  {
+            
+          },
+           "subreddit":  "programming",
+           "selftext_html":  null,
+           "selftext":  "",
+           "likes":  null,
+           "user_reports":  [
+            
+          ],
+           "secure_media":  null,
+           "link_flair_text":  null,
+           "id":  "33t0w3",
+           "gilded":  0,
+           "archived":  false,
+           "clicked":  false,
+           "report_reasons":  null,
+           "author":  "letrec",
+           "num_comments":  0,
+           "score":  4,
+           "approved_by":  null,
+           "over_18":  false,
+           "hidden":  false,
+           "thumbnail":  "",
+           "subreddit_id":  "t5_2fwo",
+           "edited":  false,
+           "link_flair_css_class":  null,
+           "author_flair_css_class":  null,
+           "downs":  0,
+           "secure_media_embed":  {
+            
+          },
+           "saved":  false,
+           "stickied":  false,
+           "is_self":  false,
+           "permalink":  "/r/programming/comments/33t0w3/teach_foundational_language_principles/",
+           "name":  "t3_33t0w3",
+           "created":  1429983579.0,
+           "url":  "http: //cacm.acm.org/magazines/2015/5/186023-teach-foundational-language-principles/fulltext#.VTtg0HhcDcs.reddit",
+           "author_flair_text":  null,
+           "title":  "Teach Foundational Language Principles",
+           "created_utc":  1429954779.0,
+           "distinguished":  null,
+           "media":  null,
+           "mod_reports":  [
+            
+          ],
+           "visited":  false,
+           "num_reports":  null,
+           "ups":  4
+        }
+      },
+       {
+        "kind":  "t3",
+         "data":  {
+          "domain":  "bloc.io",
+           "banned_by":  null,
+           "media_embed":  {
+            
+          },
+           "subreddit":  "programming",
+           "selftext_html":  null,
+           "selftext":  "",
+           "likes":  null,
+           "user_reports":  [
+            
+          ],
+           "secure_media":  null,
+           "link_flair_text":  null,
+           "id":  "33rgxf",
+           "gilded":  0,
+           "archived":  false,
+           "clicked":  false,
+           "report_reasons":  null,
+           "author":  "Eire_Banshee",
+           "num_comments":  5,
+           "score":  25,
+           "approved_by":  null,
+           "over_18":  false,
+           "hidden":  false,
+           "thumbnail":  "",
+           "subreddit_id":  "t5_2fwo",
+           "edited":  false,
+           "link_flair_css_class":  null,
+           "author_flair_css_class":  null,
+           "downs":  0,
+           "secure_media_embed":  {
+            
+          },
+           "saved":  false,
+           "stickied":  false,
+           "is_self":  false,
+           "permalink":  "/r/programming/comments/33rgxf/ruby_warrior_a_friend_showed_me_this_fun_tool_to/",
+           "name":  "t3_33rgxf",
+           "created":  1429943684.0,
+           "url":  "https: //www.bloc.io/ruby-warrior#/",
+           "author_flair_text":  null,
+           "title":  "Ruby Warrior! A friend showed me this fun tool to learn basic ruby and AI!",
+           "created_utc":  1429914884.0,
+           "distinguished":  null,
+           "media":  null,
+           "mod_reports":  [
+            
+          ],
+           "visited":  false,
+           "num_reports":  null,
+           "ups":  25
+        }
+      },
+       {
+        "kind":  "t3",
+         "data":  {
+          "domain":  "daedtech.com",
+           "banned_by":  null,
+           "media_embed":  {
+            
+          },
+           "subreddit":  "programming",
+           "selftext_html":  null,
+           "selftext":  "",
+           "likes":  null,
+           "user_reports":  [
+            
+          ],
+           "secure_media":  null,
+           "link_flair_text":  null,
+           "id":  "33rd4e",
+           "gilded":  0,
+           "archived":  false,
+           "clicked":  false,
+           "report_reasons":  null,
+           "author":  "vladmihalcea",
+           "num_comments":  5,
+           "score":  25,
+           "approved_by":  null,
+           "over_18":  false,
+           "hidden":  false,
+           "thumbnail":  "",
+           "subreddit_id":  "t5_2fwo",
+           "edited":  false,
+           "link_flair_css_class":  null,
+           "author_flair_css_class":  null,
+           "downs":  0,
+           "secure_media_embed":  {
+            
+          },
+           "saved":  false,
+           "stickied":  false,
+           "is_self":  false,
+           "permalink":  "/r/programming/comments/33rd4e/carnival_cash_the_cult_of_seniority/",
+           "name":  "t3_33rd4e",
+           "created":  1429941689.0,
+           "url":  "http: //www.daedtech.com/carnival-cash-the-cult-of-seniority",
+           "author_flair_text":  null,
+           "title":  "Carnival Cash:  The Cult of Seniority",
+           "created_utc":  1429912889.0,
+           "distinguished":  null,
+           "media":  null,
+           "mod_reports":  [
+            
+          ],
+           "visited":  false,
+           "num_reports":  null,
+           "ups":  25
+        }
+      },
+       {
+        "kind":  "t3",
+         "data":  {
+          "domain":  "csoonline.com",
+           "banned_by":  null,
+           "media_embed":  {
+            
+          },
+           "subreddit":  "programming",
+           "selftext_html":  null,
+           "selftext":  "",
+           "likes":  null,
+           "user_reports":  [
+            
+          ],
+           "secure_media":  null,
+           "link_flair_text":  null,
+           "id":  "33szj2",
+           "gilded":  0,
+           "archived":  false,
+           "clicked":  false,
+           "report_reasons":  null,
+           "author":  "omegaender",
+           "num_comments":  0,
+           "score":  2,
+           "approved_by":  null,
+           "over_18":  false,
+           "hidden":  false,
+           "thumbnail":  "",
+           "subreddit_id":  "t5_2fwo",
+           "edited":  false,
+           "link_flair_css_class":  null,
+           "author_flair_css_class":  null,
+           "downs":  0,
+           "secure_media_embed":  {
+            
+          },
+           "saved":  false,
+           "stickied":  false,
+           "is_self":  false,
+           "permalink":  "/r/programming/comments/33szj2/credit_card_terminals_have_used_same_password/",
+           "name":  "t3_33szj2",
+           "created":  1429982029.0,
+           "url":  "http: //www.csoonline.com/article/2913884/access-control/credit-card-terminals-have-used-same-password-since-1990s-claim-researchers.html",
+           "author_flair_text":  null,
+           "title":  "Credit card terminals have used same password since 1990s,
+           claim researchers",
+           "created_utc":  1429953229.0,
+           "distinguished":  null,
+           "media":  null,
+           "mod_reports":  [
+            
+          ],
+           "visited":  false,
+           "num_reports":  null,
+           "ups":  2
+        }
+      },
+       {
+        "kind":  "t3",
+         "data":  {
+          "domain":  "kryogenix.org",
+           "banned_by":  null,
+           "media_embed":  {
+            
+          },
+           "subreddit":  "programming",
+           "selftext_html":  null,
+           "selftext":  "",
+           "likes":  null,
+           "user_reports":  [
+            
+          ],
+           "secure_media":  null,
+           "link_flair_text":  null,
+           "id":  "33p3yy",
+           "gilded":  0,
+           "archived":  false,
+           "clicked":  false,
+           "report_reasons":  null,
+           "author":  "insin",
+           "num_comments":  289,
+           "score":  177,
+           "approved_by":  null,
+           "over_18":  false,
+           "hidden":  false,
+           "thumbnail":  "",
+           "subreddit_id":  "t5_2fwo",
+           "edited":  false,
+           "link_flair_css_class":  null,
+           "author_flair_css_class":  null,
+           "downs":  0,
+           "secure_media_embed":  {
+            
+          },
+           "saved":  false,
+           "stickied":  false,
+           "is_self":  false,
+           "permalink":  "/r/programming/comments/33p3yy/everyone_has_javascript_right/",
+           "name":  "t3_33p3yy",
+           "created":  1429899687.0,
+           "url":  "http: //kryogenix.org/code/browser/everyonehasjs.html",
+           "author_flair_text":  null,
+           "title":  "Everyone has JavaScript,
+           right?",
+           "created_utc":  1429870887.0,
+           "distinguished":  null,
+           "media":  null,
+           "mod_reports":  [
+            
+          ],
+           "visited":  false,
+           "num_reports":  null,
+           "ups":  177
+        }
+      },
+       {
+        "kind":  "t3",
+         "data":  {
+          "domain":  "polyglotweekly.com",
+           "banned_by":  null,
+           "media_embed":  {
+            
+          },
+           "subreddit":  "programming",
+           "selftext_html":  null,
+           "selftext":  "",
+           "likes":  null,
+           "user_reports":  [
+            
+          ],
+           "secure_media":  null,
+           "link_flair_text":  null,
+           "id":  "33qixh",
+           "gilded":  0,
+           "archived":  false,
+           "clicked":  false,
+           "report_reasons":  null,
+           "author":  "bcoe",
+           "num_comments":  0,
+           "score":  42,
+           "approved_by":  null,
+           "over_18":  false,
+           "hidden":  false,
+           "thumbnail":  "",
+           "subreddit_id":  "t5_2fwo",
+           "edited":  false,
+           "link_flair_css_class":  null,
+           "author_flair_css_class":  null,
+           "downs":  0,
+           "secure_media_embed":  {
+            
+          },
+           "saved":  false,
+           "stickied":  false,
+           "is_self":  false,
+           "permalink":  "/r/programming/comments/33qixh/what_ive_learned_from_inheriting_a_popular_open/",
+           "name":  "t3_33qixh",
+           "created":  1429927317.0,
+           "url":  "http: //www.polyglotweekly.com/2015/04/21/what-ive-learned-from-inheriting-a-popular-open-source-project.html",
+           "author_flair_text":  null,
+           "title":  "What I've Learned From Inheriting A Popular Open Source Project",
+           "created_utc":  1429898517.0,
+           "distinguished":  null,
+           "media":  null,
+           "mod_reports":  [
+            
+          ],
+           "visited":  false,
+           "num_reports":  null,
+           "ups":  42
+        }
+      },
+       {
+        "kind":  "t3",
+         "data":  {
+          "domain":  "software.intel.com",
+           "banned_by":  null,
+           "media_embed":  {
+            
+          },
+           "subreddit":  "programming",
+           "selftext_html":  null,
+           "selftext":  "",
+           "likes":  null,
+           "user_reports":  [
+            
+          ],
+           "secure_media":  null,
+           "link_flair_text":  null,
+           "id":  "33sw7a",
+           "gilded":  0,
+           "archived":  false,
+           "clicked":  false,
+           "report_reasons":  null,
+           "author":  "Muscat1992",
+           "num_comments":  1,
+           "score":  4,
+           "approved_by":  null,
+           "over_18":  false,
+           "hidden":  false,
+           "thumbnail":  "",
+           "subreddit_id":  "t5_2fwo",
+           "edited":  false,
+           "link_flair_css_class":  null,
+           "author_flair_css_class":  null,
+           "downs":  0,
+           "secure_media_embed":  {
+            
+          },
+           "saved":  false,
+           "stickied":  false,
+           "is_self":  false,
+           "permalink":  "/r/programming/comments/33sw7a/lets_play_a_game_find_bugs_in_popular_opensource/",
+           "name":  "t3_33sw7a",
+           "created":  1429978521.0,
+           "url":  "https: //software.intel.com/en-us/blogs/2015/04/24/lets-play-a-game-find-bugs-in-popular-open-source-projects",
+           "author_flair_text":  null,
+           "title":  "Let's Play a Game - find bugs in popular open-source projects",
+           "created_utc":  1429949721.0,
+           "distinguished":  null,
+           "media":  null,
+           "mod_reports":  [
+            
+          ],
+           "visited":  false,
+           "num_reports":  null,
+           "ups":  4
+        }
+      },
+       {
+        "kind":  "t3",
+         "data":  {
+          "domain":  "infoq.com",
+           "banned_by":  null,
+           "media_embed":  {
+            
+          },
+           "subreddit":  "programming",
+           "selftext_html":  null,
+           "selftext":  "",
+           "likes":  null,
+           "user_reports":  [
+            
+          ],
+           "secure_media":  null,
+           "link_flair_text":  null,
+           "id":  "33t36m",
+           "gilded":  0,
+           "archived":  false,
+           "clicked":  false,
+           "report_reasons":  null,
+           "author":  "ErstwhileRockstar",
+           "num_comments":  0,
+           "score":  1,
+           "approved_by":  null,
+           "over_18":  false,
+           "hidden":  false,
+           "thumbnail":  "",
+           "subreddit_id":  "t5_2fwo",
+           "edited":  false,
+           "link_flair_css_class":  null,
+           "author_flair_css_class":  null,
+           "downs":  0,
+           "secure_media_embed":  {
+            
+          },
+           "saved":  false,
+           "stickied":  false,
+           "is_self":  false,
+           "permalink":  "/r/programming/comments/33t36m/domain_service_aggregators_a_structured_approach/",
+           "name":  "t3_33t36m",
+           "created":  1429986108.0,
+           "url":  "http: //www.infoq.com/presentations/domain-service-aggregator",
+           "author_flair_text":  null,
+           "title":  "Domain Service Aggregators:  A Structured Approach to Microservice Composition",
+           "created_utc":  1429957308.0,
+           "distinguished":  null,
+           "media":  null,
+           "mod_reports":  [
+            
+          ],
+           "visited":  false,
+           "num_reports":  null,
+           "ups":  1
+        }
+      },
+       {
+        "kind":  "t3",
+         "data":  {
+          "domain":  "hanselman.com",
+           "banned_by":  null,
+           "media_embed":  {
+            
+          },
+           "subreddit":  "programming",
+           "selftext_html":  null,
+           "selftext":  "",
+           "likes":  null,
+           "user_reports":  [
+            
+          ],
+           "secure_media":  null,
+           "link_flair_text":  null,
+           "id":  "33q5ip",
+           "gilded":  0,
+           "archived":  false,
+           "clicked":  false,
+           "report_reasons":  null,
+           "author":  "exceptionnotfound",
+           "num_comments":  26,
+           "score":  45,
+           "approved_by":  null,
+           "over_18":  false,
+           "hidden":  false,
+           "thumbnail":  "",
+           "subreddit_id":  "t5_2fwo",
+           "edited":  false,
+           "link_flair_css_class":  null,
+           "author_flair_css_class":  null,
+           "downs":  0,
+           "secure_media_embed":  {
+            
+          },
+           "saved":  false,
+           "stickied":  false,
+           "is_self":  false,
+           "permalink":  "/r/programming/comments/33q5ip/bad_ux_and_user_self_blame_im_sorry_im_not_a/",
+           "name":  "t3_33q5ip",
+           "created":  1429921350.0,
+           "url":  "http: //www.hanselman.com/blog/BadUXAndUserSelfBlameImSorryImNotAComputerPerson.aspx",
+           "author_flair_text":  null,
+           "title":  "Bad UX and User Self Blame - \"I'm sorry, I'm not a computer person\"",
+           "created_utc":  1429892550.0,
+           "distinguished":  null,
+           "media":  null,
+           "mod_reports":  [
+            
+          ],
+           "visited":  false,
+           "num_reports":  null,
+           "ups":  45
+        }
+      },
+       {
+        "kind":  "t3",
+         "data":  {
+          "domain":  "mechanical-elephant.com",
+           "banned_by":  null,
+           "media_embed":  {
+            
+          },
+           "subreddit":  "programming",
+           "selftext_html":  null,
+           "selftext":  "",
+           "likes":  null,
+           "user_reports":  [
+            
+          ],
+           "secure_media":  null,
+           "link_flair_text":  null,
+           "id":  "33oyx9",
+           "gilded":  0,
+           "archived":  false,
+           "clicked":  false,
+           "report_reasons":  null,
+           "author":  "GarethX",
+           "num_comments":  13,
+           "score":  134,
+           "approved_by":  null,
+           "over_18":  false,
+           "hidden":  false,
+           "thumbnail":  "",
+           "subreddit_id":  "t5_2fwo",
+           "edited":  false,
+           "link_flair_css_class":  null,
+           "author_flair_css_class":  null,
+           "downs":  0,
+           "secure_media_embed":  {
+            
+          },
+           "saved":  false,
+           "stickied":  false,
+           "is_self":  false,
+           "permalink":  "/r/programming/comments/33oyx9/becoming_productive_in_haskell/",
+           "name":  "t3_33oyx9",
+           "created":  1429894814.0,
+           "url":  "http: //mechanical-elephant.com/thoughts/2015-04-20-becoming-productive-in-haskell/index.html",
+           "author_flair_text":  null,
+           "title":  "Becoming Productive in Haskell",
+           "created_utc":  1429866014.0,
+           "distinguished":  null,
+           "media":  null,
+           "mod_reports":  [
+            
+          ],
+           "visited":  false,
+           "num_reports":  null,
+           "ups":  134
+        }
+      },
+       {
+        "kind":  "t3",
+         "data":  {
+          "domain":  "medium.com",
+           "banned_by":  null,
+           "media_embed":  {
+            
+          },
+           "subreddit":  "programming",
+           "selftext_html":  null,
+           "selftext":  "",
+           "likes":  null,
+           "user_reports":  [
+            
+          ],
+           "secure_media":  null,
+           "link_flair_text":  null,
+           "id":  "33q4l8",
+           "gilded":  0,
+           "archived":  false,
+           "clicked":  false,
+           "report_reasons":  null,
+           "author":  "Anirak",
+           "num_comments":  4,
+           "score":  29,
+           "approved_by":  null,
+           "over_18":  false,
+           "hidden":  false,
+           "thumbnail":  "",
+           "subreddit_id":  "t5_2fwo",
+           "edited":  false,
+           "link_flair_css_class":  null,
+           "author_flair_css_class":  null,
+           "downs":  0,
+           "secure_media_embed":  {
+            
+          },
+           "saved":  false,
+           "stickied":  false,
+           "is_self":  false,
+           "permalink":  "/r/programming/comments/33q4l8/solving_a_tricky_problem/",
+           "name":  "t3_33q4l8",
+           "created":  1429920933.0,
+           "url":  "https: //medium.com/@dan.ellis/solving-a-tricky-problem-d1a8766f5347",
+           "author_flair_text":  null,
+           "title":  "Solving a Tricky Problem",
+           "created_utc":  1429892133.0,
+           "distinguished":  null,
+           "media":  null,
+           "mod_reports":  [
+            
+          ],
+           "visited":  false,
+           "num_reports":  null,
+           "ups":  29
+        }
+      },
+       {
+        "kind":  "t3",
+         "data":  {
+          "domain":  "youtube.com",
+           "banned_by":  null,
+           "media_embed":  {
+            
+          },
+           "subreddit":  "programming",
+           "selftext_html":  null,
+           "selftext":  "",
+           "likes":  null,
+           "user_reports":  [
+            
+          ],
+           "secure_media":  null,
+           "link_flair_text":  null,
+           "id":  "33sri1",
+           "gilded":  0,
+           "archived":  false,
+           "clicked":  false,
+           "report_reasons":  null,
+           "author":  "twit16",
+           "num_comments":  0,
+           "score":  1,
+           "approved_by":  null,
+           "over_18":  false,
+           "hidden":  false,
+           "thumbnail":  "",
+           "subreddit_id":  "t5_2fwo",
+           "edited":  false,
+           "link_flair_css_class":  null,
+           "author_flair_css_class":  null,
+           "downs":  0,
+           "secure_media_embed":  {
+            
+          },
+           "saved":  false,
+           "stickied":  false,
+           "is_self":  false,
+           "permalink":  "/r/programming/comments/33sri1/whoa_mimino_is_solving_75_project_euler_problems/",
+           "name":  "t3_33sri1",
+           "created":  1429974008.0,
+           "url":  "https: //www.youtube.com/watch?v=jP3-G61C3fc",
+           "author_flair_text":  null,
+           "title":  "Whoa,
+           Mimino is Solving 75+ Project Euler problems for 24 hours LIVE right now!",
+           "created_utc":  1429945208.0,
+           "distinguished":  null,
+           "media":  null,
+           "mod_reports":  [
+            
+          ],
+           "visited":  false,
+           "num_reports":  null,
+           "ups":  1
+        }
+      },
+       {
+        "kind":  "t3",
+         "data":  {
+          "domain":  "belliottsmith.com",
+           "banned_by":  null,
+           "media_embed":  {
+            
+          },
+           "subreddit":  "programming",
+           "selftext_html":  null,
+           "selftext":  "",
+           "likes":  null,
+           "user_reports":  [
+            
+          ],
+           "secure_media":  null,
+           "link_flair_text":  null,
+           "id":  "33r7ni",
+           "gilded":  0,
+           "archived":  false,
+           "clicked":  false,
+           "report_reasons":  null,
+           "author":  "alekseyiam",
+           "num_comments":  2,
+           "score":  12,
+           "approved_by":  null,
+           "over_18":  false,
+           "hidden":  false,
+           "thumbnail":  "",
+           "subreddit_id":  "t5_2fwo",
+           "edited":  false,
+           "link_flair_css_class":  null,
+           "author_flair_css_class":  null,
+           "downs":  0,
+           "secure_media_embed":  {
+            
+          },
+           "saved":  false,
+           "stickied":  false,
+           "is_self":  false,
+           "permalink":  "/r/programming/comments/33r7ni/injector_low_overhead_task_execution_in_java/",
+           "name":  "t3_33r7ni",
+           "created":  1429938912.0,
+           "url":  "http: //belliottsmith.com/low-overhead-task-execution/",
+           "author_flair_text":  null,
+           "title":  "Injector - Low Overhead Task Execution in Java",
+           "created_utc":  1429910112.0,
+           "distinguished":  null,
+           "media":  null,
+           "mod_reports":  [
+            
+          ],
+           "visited":  false,
+           "num_reports":  null,
+           "ups":  12
+        }
+      },
+       {
+        "kind":  "t3",
+         "data":  {
+          "domain":  "stackbuilders.com",
+           "banned_by":  null,
+           "media_embed":  {
+            
+          },
+           "subreddit":  "programming",
+           "selftext_html":  null,
+           "selftext":  "",
+           "likes":  null,
+           "user_reports":  [
+            
+          ],
+           "secure_media":  null,
+           "link_flair_text":  null,
+           "id":  "33r0iy",
+           "gilded":  0,
+           "archived":  false,
+           "clicked":  false,
+           "report_reasons":  null,
+           "author":  "juanpablosantos",
+           "num_comments":  9,
+           "score":  14,
+           "approved_by":  null,
+           "over_18":  false,
+           "hidden":  false,
+           "thumbnail":  "",
+           "subreddit_id":  "t5_2fwo",
+           "edited":  false,
+           "link_flair_css_class":  null,
+           "author_flair_css_class":  null,
+           "downs":  0,
+           "secure_media_embed":  {
+            
+          },
+           "saved":  false,
+           "stickied":  false,
+           "is_self":  false,
+           "permalink":  "/r/programming/comments/33r0iy/the_hidden_costs_of_microservices/",
+           "name":  "t3_33r0iy",
+           "created":  1429935428.0,
+           "url":  "http: //www.stackbuilders.com/news/the-hidden-costs-of-microservices",
+           "author_flair_text":  null,
+           "title":  "The Hidden Costs of Microservices",
+           "created_utc":  1429906628.0,
+           "distinguished":  null,
+           "media":  null,
+           "mod_reports":  [
+            
+          ],
+           "visited":  false,
+           "num_reports":  null,
+           "ups":  14
+        }
+      },
+       {
+        "kind":  "t3",
+         "data":  {
+          "domain":  "tuxdiary.com",
+           "banned_by":  null,
+           "media_embed":  {
+            
+          },
+           "subreddit":  "programming",
+           "selftext_html":  null,
+           "selftext":  "",
+           "likes":  null,
+           "user_reports":  [
+            
+          ],
+           "secure_media":  null,
+           "link_flair_text":  null,
+           "id":  "33t06b",
+           "gilded":  0,
+           "archived":  false,
+           "clicked":  false,
+           "report_reasons":  null,
+           "author":  "happytux",
+           "num_comments":  0,
+           "score":  0,
+           "approved_by":  null,
+           "over_18":  false,
+           "hidden":  false,
+           "thumbnail":  "",
+           "subreddit_id":  "t5_2fwo",
+           "edited":  false,
+           "link_flair_css_class":  null,
+           "author_flair_css_class":  null,
+           "downs":  0,
+           "secure_media_embed":  {
+            
+          },
+           "saved":  false,
+           "stickied":  false,
+           "is_self":  false,
+           "permalink":  "/r/programming/comments/33t06b/log_the_smart_way/",
+           "name":  "t3_33t06b",
+           "created":  1429982763.0,
+           "url":  "http: //tuxdiary.com/2015/04/25/log-smart/",
+           "author_flair_text":  null,
+           "title":  "Log the smart way",
+           "created_utc":  1429953963.0,
+           "distinguished":  null,
+           "media":  null,
+           "mod_reports":  [
+            
+          ],
+           "visited":  false,
+           "num_reports":  null,
+           "ups":  0
+        }
+      },
+       {
+        "kind":  "t3",
+         "data":  {
+          "domain":  "inside.unbounce.com",
+           "banned_by":  null,
+           "media_embed":  {
+            
+          },
+           "subreddit":  "programming",
+           "selftext_html":  null,
+           "selftext":  "",
+           "likes":  null,
+           "user_reports":  [
+            
+          ],
+           "secure_media":  null,
+           "link_flair_text":  null,
+           "id":  "33rgn9",
+           "gilded":  0,
+           "archived":  false,
+           "clicked":  false,
+           "report_reasons":  null,
+           "author":  "yogthos",
+           "num_comments":  3,
+           "score":  7,
+           "approved_by":  null,
+           "over_18":  false,
+           "hidden":  false,
+           "thumbnail":  "",
+           "subreddit_id":  "t5_2fwo",
+           "edited":  false,
+           "link_flair_css_class":  null,
+           "author_flair_css_class":  null,
+           "downs":  0,
+           "secure_media_embed":  {
+            
+          },
+           "saved":  false,
+           "stickied":  false,
+           "is_self":  false,
+           "permalink":  "/r/programming/comments/33rgn9/our_curvy_road_to_clojure/",
+           "name":  "t3_33rgn9",
+           "created":  1429943533.0,
+           "url":  "http: //inside.unbounce.com/product-dev/our-curvy-road-to-clojure/",
+           "author_flair_text":  null,
+           "title":  "Our curvy road to Clojure",
+           "created_utc":  1429914733.0,
+           "distinguished":  null,
+           "media":  null,
+           "mod_reports":  [
+            
+          ],
+           "visited":  false,
+           "num_reports":  null,
+           "ups":  7
+        }
+      },
+       {
+        "kind":  "t3",
+         "data":  {
+          "domain":  "youtube.com",
+           "banned_by":  null,
+           "media_embed":  {
+            "content":  "&lt;iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=http%3A%2F%2Fwww.youtube.com%2Fembed%2F_s5RFgd59ao%3Ffeature%3Doembed&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D_s5RFgd59ao&amp;image=http%3A%2F%2Fi.ytimg.com%2Fvi%2F_s5RFgd59ao%2Fhqdefault.jpg&amp;key=2aa3c4d5f3de4f5b9120b660ad850dc9&amp;type=text%2Fhtml&amp;schema=youtube\" width=\"600\" height=\"338\" scrolling=\"no\" frameborder=\"0\" allowfullscreen&gt;&lt;/iframe&gt;",
+             "width":  600,
+             "scrolling":  false,
+             "height":  338
+          },
+           "subreddit":  "programming",
+           "selftext_html":  null,
+           "selftext":  "",
+           "likes":  null,
+           "user_reports":  [
+            
+          ],
+           "secure_media":  {
+            "type":  "youtube.com",
+             "oembed":  {
+              "provider_url":  "http: //www.youtube.com/",
+               "description":  "Matt Parker discusses Tupper's Self-Referential Formula. Matt's book on Amazon (US):  http: //bit.ly/Matt_4D_US Matt's book on Amazon (UK):  http: //bit.ly/Matt_4D_UK A little bit of extra footage from this video:  http: //youtu.be/wx22jdwn5zQ Thanks to our Patreon supporters...",
+               "title":  "The 'Everything' Formula - Numberphile",
+               "url":  "http: //www.youtube.com/watch?v=_s5RFgd59ao",
+               "author_name":  "Numberphile",
+               "height":  338,
+               "width":  600,
+               "html":  "&lt;iframe class=\"embedly-embed\" src=\"https: //cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F_s5RFgd59ao%3Ffeature%3Doembed&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D_s5RFgd59ao&amp;image=http%3A%2F%2Fi.ytimg.com%2Fvi%2F_s5RFgd59ao%2Fhqdefault.jpg&amp;key=2aa3c4d5f3de4f5b9120b660ad850dc9&amp;type=text%2Fhtml&amp;schema=youtube\" width=\"600\" height=\"338\" scrolling=\"no\" frameborder=\"0\" allowfullscreen&gt;&lt;/iframe&gt;",
+               "thumbnail_width":  480,
+               "version":  "1.0",
+               "provider_name":  "YouTube",
+               "thumbnail_url":  "https: //i.embed.ly/1/image?url=http%3A%2F%2Fi.ytimg.com%2Fvi%2F_s5RFgd59ao%2Fhqdefault.jpg&amp;key=b1e305db91cf4aa5a86b732cc9fffceb",
+               "type":  "video",
+               "thumbnail_height":  360,
+               "author_url":  "http: //www.youtube.com/user/numberphile"
+            }
+          },
+           "link_flair_text":  null,
+           "id":  "33lt61",
+           "gilded":  0,
+           "archived":  false,
+           "clicked":  false,
+           "report_reasons":  null,
+           "author":  "haris3301",
+           "num_comments":  183,
+           "score":  1269,
+           "approved_by":  null,
+           "over_18":  false,
+           "hidden":  false,
+           "thumbnail":  "",
+           "subreddit_id":  "t5_2fwo",
+           "edited":  false,
+           "link_flair_css_class":  null,
+           "author_flair_css_class":  null,
+           "downs":  0,
+           "secure_media_embed":  {
+            "content":  "&lt;iframe class=\"embedly-embed\" src=\"https: //cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F_s5RFgd59ao%3Ffeature%3Doembed&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D_s5RFgd59ao&amp;image=http%3A%2F%2Fi.ytimg.com%2Fvi%2F_s5RFgd59ao%2Fhqdefault.jpg&amp;key=2aa3c4d5f3de4f5b9120b660ad850dc9&amp;type=text%2Fhtml&amp;schema=youtube\" width=\"600\" height=\"338\" scrolling=\"no\" frameborder=\"0\" allowfullscreen&gt;&lt;/iframe&gt;",
+             "width":  600,
+             "scrolling":  false,
+             "height":  338
+          },
+           "saved":  false,
+           "stickied":  false,
+           "is_self":  false,
+           "permalink":  "/r/programming/comments/33lt61/the_everything_formula_just_when_you_thought/",
+           "name":  "t3_33lt61",
+           "created":  1429833050.0,
+           "url":  "https: //www.youtube.com/watch?v=_s5RFgd59ao",
+           "author_flair_text":  null,
+           "title":  "The 'Everything' Formula. [
+             Just when you thought maths cant get any cooler 
+          ]",
+           "created_utc":  1429804250.0,
+           "distinguished":  null,
+           "media":  {
+            "type":  "youtube.com",
+             "oembed":  {
+              "provider_url":  "http: //www.youtube.com/",
+               "description":  "Matt Parker discusses Tupper's Self-Referential Formula. Matt's book on Amazon (US):  http: //bit.ly/Matt_4D_US Matt's book on Amazon (UK):  http: //bit.ly/Matt_4D_UK A little bit of extra footage from this video:  http: //youtu.be/wx22jdwn5zQ Thanks to our Patreon supporters...",
+               "title":  "The 'Everything' Formula - Numberphile",
+               "url":  "http: //www.youtube.com/watch?v=_s5RFgd59ao",
+               "author_name":  "Numberphile",
+               "height":  338,
+               "width":  600,
+               "html":  "&lt;iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=http%3A%2F%2Fwww.youtube.com%2Fembed%2F_s5RFgd59ao%3Ffeature%3Doembed&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D_s5RFgd59ao&amp;image=http%3A%2F%2Fi.ytimg.com%2Fvi%2F_s5RFgd59ao%2Fhqdefault.jpg&amp;key=2aa3c4d5f3de4f5b9120b660ad850dc9&amp;type=text%2Fhtml&amp;schema=youtube\" width=\"600\" height=\"338\" scrolling=\"no\" frameborder=\"0\" allowfullscreen&gt;&lt;/iframe&gt;",
+               "thumbnail_width":  480,
+               "version":  "1.0",
+               "provider_name":  "YouTube",
+               "thumbnail_url":  "http: //i.ytimg.com/vi/_s5RFgd59ao/hqdefault.jpg",
+               "type":  "video",
+               "thumbnail_height":  360,
+               "author_url":  "http: //www.youtube.com/user/numberphile"
+            }
+          },
+           "mod_reports":  [
+            
+          ],
+           "visited":  false,
+           "num_reports":  null,
+           "ups":  1269
+        }
+      }
+    ],
+     "after":  "t3_33lt61",
+     "before":  null
+  }
+}

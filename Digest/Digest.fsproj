@@ -49,11 +49,17 @@
   </Choose>
   <Import Project="$(FSharpTargetsPath)" />
   <ItemGroup>
+    <Compile Include="Helpers.fs" />
     <Compile Include="Article.fs" />
     <None Include="packages.config" />
     <None Include="app.config" />
+    <Compile Include="ArticleSource.fs" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="FSharp.Control.AsyncSeq">
+      <HintPath>..\packages\FSharp.Control.AsyncSeq.1.15.0\lib\net40\FSharp.Control.AsyncSeq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="FSharp.Data">
       <HintPath>..\packages\FSharp.Data.2.2.0\lib\net40\FSharp.Data.dll</HintPath>
       <Private>True</Private>

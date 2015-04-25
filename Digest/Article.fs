@@ -1,23 +1,17 @@
 ﻿namespace Digest
 
 open System
-open System.Net
 open System.Text.RegularExpressions
 open FSharp.Data
-open Microsoft.FSharp.Control.WebExtensions
 
 type ArticleType = { Text: string }
 type RankedArticleType = { Article: ArticleType; Rank: double }
 
 module Article =
-    
-    let private downloadFromUri uri = 
-            let webClient = new WebClient()
-            webClient.AsyncDownloadString(uri)
-    
+   
     let Create uri =
         async {
-            let! content = downloadFromUri uri
+            let! content = Helpers.downloadFromUri uri
             return { Text = content }
         }
 
