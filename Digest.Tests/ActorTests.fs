@@ -8,13 +8,13 @@ open FSharp.Control
 open FsUnit.Xunit
 open Xunit
 
-type TestActor() = 
+type TestActor<'a>() = 
     let mutable recievedMessages = []
 
     member this.GetMessageCount() =
         recievedMessages |> Seq.length
 
-    interface IActor<ArticleType> with
+    interface IActor<'a> with
         member this.Cancel() = ()
         member this.Post(m) = recievedMessages <- m :: recievedMessages
         
@@ -22,10 +22,23 @@ type TestActor() =
 [<Fact>]
 let ``The FetchArticles mailbox gets messages over time``() =
     let rootUri = new Uri("http://google.com")
-    let actor = new Pipeline.FetchArticles()
-    let assertionActor = new TestActor()
+    let actor = new Pipeline.FetchArticlesActor()
+    let assertionActor = new TestActor<ArticleType>()
     actor.AddChild(assertionActor)
     actor.Post(rootUri)
-    Thread.Sleep(TimeSpan.FromSeconds(10.0))
+    Thread.Sleep(TimeSpan.FromSeconds(2.0))
     actor.Cancel()
     assertionActor.GetMessageCount() |> should not' (equal 0)
+
+[<Fact>]
+let ``Given 2 identical URIs, the Dedupe actor will only allow 1 to be processed``() =
+    let uri = new Uri("http://google.com")
+    let actor = new Pipeline.DedupeActor()
+    let assertionActor = new TestActor<Uri>()
+    actor.AddChild(assertionActor)
+    actor.Post(uri)
+    actor.Post(uri)
+    Thread.Sleep(TimeSpan.FromSeconds(1.0))
+    actor.Cancel()
+    assertionActor.GetMessageCount() |> should equal 1
+
