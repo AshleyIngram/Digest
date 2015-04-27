@@ -5,7 +5,7 @@ open FSharp.Control
 open FSharp.Data
 
 type IArticleSource = 
-    abstract member GetArticles: unit -> AsyncSeq<ArticleType>
+    abstract member GetArticles: unit -> Async<seq<Uri>>
 
 type RedditTypeProvider = JsonProvider<"Data/SubredditListingExample.json">
 
@@ -22,11 +22,7 @@ type RedditArticleSource(subreddit: string) =
 
     interface IArticleSource with
         member this.GetArticles() =
-            asyncSeq {
+            async {
                 let! redditPage = downloadRedditPage
-                let articles = redditPage |> getSubmissionLinks |> Seq.map(fun l -> new Uri(l)) |> Seq.map Article.Create
-                
-                for article in articles do
-                    let! a = article
-                    yield a
+                return redditPage |> getSubmissionLinks |> Seq.map(fun l -> new Uri(l))
             }
