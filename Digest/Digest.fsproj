@@ -54,6 +54,7 @@
     <None Include="packages.config" />
     <None Include="app.config" />
     <Compile Include="ArticleSource.fs" />
+    <Compile Include="Pipeline.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FSharp.Control.AsyncSeq">
