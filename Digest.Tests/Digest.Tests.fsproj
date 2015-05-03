@@ -69,6 +69,7 @@
     <None Include="app.config" />
     <Compile Include="ArticleSourceTests.fs" />
     <Compile Include="ActorTests.fs" />
+    <Compile Include="StemmingTests.fs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Digest\Digest.fsproj">
