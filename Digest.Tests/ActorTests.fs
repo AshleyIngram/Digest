@@ -3,6 +3,7 @@
 open System
 open System.Threading
 open Digest
+open Digest.Actor
 open Digest.Pipeline
 open FSharp.Control
 open FsUnit.Xunit
@@ -14,7 +15,7 @@ type TestActor<'a>() =
     member this.GetMessageCount() =
         recievedMessages |> Seq.length
 
-    interface IActor<'a> with
+    interface IRecievingActor<'a> with
         member this.Cancel() = ()
         member this.Post(m) = recievedMessages <- m :: recievedMessages
         
@@ -22,7 +23,7 @@ type TestActor<'a>() =
 [<Fact>]
 let ``The FetchArticles mailbox gets messages over time``() =
     let rootUri = new Uri("http://google.com")
-    let actor = new Pipeline.FetchArticlesActor()
+    let actor = Pipeline.FetchArticlesActor
     let assertionActor = new TestActor<ArticleType>()
     actor.AddChild(assertionActor)
     actor.Post(rootUri)
@@ -33,7 +34,7 @@ let ``The FetchArticles mailbox gets messages over time``() =
 [<Fact>]
 let ``Given 2 identical URIs, the Dedupe actor will only allow 1 to be processed``() =
     let uri = new Uri("http://google.com")
-    let actor = new Pipeline.DedupeActor()
+    let actor = Pipeline.DedupeActor
     let assertionActor = new TestActor<Uri>()
     actor.AddChild(assertionActor)
     actor.Post(uri)
