@@ -50,13 +50,13 @@
   <Import Project="$(FSharpTargetsPath)" />
   <ItemGroup>
     <Compile Include="Helpers.fs" />
+    <Compile Include="Stemming.fs" />
     <Compile Include="Article.fs" />
     <None Include="packages.config" />
     <None Include="app.config" />
     <Compile Include="ArticleSource.fs" />
     <Compile Include="Actor.fs" />
     <Compile Include="Actors.fs" />
-    <Compile Include="Stemming.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FSharp.Control.AsyncSeq">

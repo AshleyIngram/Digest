@@ -4,6 +4,7 @@ open System
 open System.Diagnostics
 open System.Net
 open Digest.Actor
+open Digest.TextAnalysis.Stemming
 
 let handleFailedWebRequest (httpWebResponse: HttpWebResponse) =
     let responseUri = httpWebResponse.ResponseUri.ToString()
@@ -40,5 +41,14 @@ let deduplicateUris(uri, state: State<Uri, Uri, Set<string>>) =
             return newState
     }
 
+let stemArticle(article, state) =
+    async {
+        let stems = article.Text.Split(' ') |> Seq.map (fun w -> stem w)
+        let result = (article, stems)
+        state.children |> Seq.iter (fun c -> c.Post(result))
+        return state
+    } 
+
 let FetchArticlesActor = new Actor<Uri, ArticleType, Object>(fetchArticles, None)
 let DedupeActor = new Actor<Uri, Uri, Set<string>>(deduplicateUris, Set.empty)
+let StemmingActor = new Actor<ArticleType, (ArticleType * seq<string>), Object>(stemArticle, None) 
