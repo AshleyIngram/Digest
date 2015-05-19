@@ -15,3 +15,9 @@ let ``Words should be stemmed to a common root``() =
     "accountant" => "account"
     "accounted" => "account"
     "accounting" => "account"
+
+[<Fact>]
+let ``Words should be 'normalized' by lower casing and removing punctuation``() =
+    "Testing" => "test"
+    "Fishing" => "fish"
+    "Fishing." => "fish"
