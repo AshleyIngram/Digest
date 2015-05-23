@@ -49,6 +49,7 @@
   </Choose>
   <Import Project="$(FSharpTargetsPath)" />
   <ItemGroup>
+    <Compile Include="PersistentCollections.fs" />
     <Compile Include="Helpers.fs" />
     <Compile Include="Stemming.fs" />
     <Compile Include="Article.fs" />
@@ -66,6 +67,9 @@
     <Reference Include="FSharp.Data">
       <HintPath>..\packages\FSharp.Data.2.2.0\lib\net40\FSharp.Data.dll</HintPath>
       <Private>True</Private>
+    </Reference>
+    <Reference Include="FsPickler">
+      <HintPath>..\packages\FsPickler.1.2.1\lib\net45\FsPickler.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

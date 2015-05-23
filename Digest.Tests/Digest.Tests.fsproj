@@ -70,6 +70,7 @@
     <Compile Include="ArticleSourceTests.fs" />
     <Compile Include="ActorTests.fs" />
     <Compile Include="StemmingTests.fs" />
+    <Compile Include="PersistentCollectionsTests.fs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Digest\Digest.fsproj">
