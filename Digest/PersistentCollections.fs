@@ -26,21 +26,41 @@ type PersistentDictionary<'k, 'v when 'k : equality>(id) =
 
     let collection = base.getCollection()
 
-    member this.set(key, value) =
+    member this.Set(key, value) =
         collection.Add(key, value) |> ignore
         base.save(collection)
 
-    member this.get(key) =
+    member this.Get(key) =
         collection.Item(key)
+
+    member this.Contains(key) =
+        collection.ContainsKey(key)
 
 type PersistentSet<'t>(id) = 
     inherit PersistentCollection<HashSet<'t>>(id, "_set")
 
     let collection = base.getCollection()
 
-    member this.add(value) =
+    member this.Add(value) =
         collection.Add(value) |> ignore
         base.save(collection)
 
-    member this.contains(value) =
+    member this.Contains(value) =
         collection.Contains(value)
+
+type PersistentQueue<'t>(id) =
+    inherit PersistentCollection<Queue<'t>>(id, "_queue")
+
+    let collection = base.getCollection()
+
+    member this.Enqueue(value) = 
+        collection.Enqueue(value)
+        base.save(collection)
+
+    member this.Dequeue() =
+        try 
+            let value = collection.Dequeue()
+            base.save(collection)
+            Some(value)
+        with
+            | :? System.InvalidOperationException -> None

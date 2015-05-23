@@ -4,13 +4,8 @@ open System
 open System.Diagnostics
 open System.Net
 open Digest.Actor
+open Digest.Helpers
 open Digest.TextAnalysis.Stemming
-
-let handleFailedWebRequest (httpWebResponse: HttpWebResponse) =
-    let responseUri = httpWebResponse.ResponseUri.ToString()
-    let status = httpWebResponse.StatusCode.ToString()
-    let traceMessage = sprintf "WebException occurred: %s %s" responseUri status
-    Trace.TraceError(traceMessage)
 
 let fetchArticles(uri, state) =
     async {
@@ -25,7 +20,7 @@ let fetchArticles(uri, state) =
                 
             | :? WebException as e when (e.Response :? HttpWebResponse) ->
                 let httpWebResponse = e.Response :?> HttpWebResponse
-                handleFailedWebRequest httpWebResponse
+                Trace.TraceWarning(failedWebRequestString httpWebResponse)
 
         return state
     }
