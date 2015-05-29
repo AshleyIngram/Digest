@@ -66,8 +66,13 @@ let runRankingProgram = async {
     return! processQueue(uriQueue.Dequeue(), uriQueue)
 }
 
-let showStats = 
-    ignore()
+let showStats() = 
+    let dict = (new PersistentDictionary<Uri, double>("ArticleRanks")).getCollection()
+    let count = dict.Count
+    let top10 = dict |> Seq.sortBy (fun (KeyValue(k, v)) -> v) |> Seq.truncate 10
+    printfn "Processed %d articles" count
+    printfn "The top 10 articles are..."
+    top10 |> Seq.map (fun(KeyValue(k, v)) -> k.ToString()) |> Seq.iter(fun (l) -> printfn "%s" l)
 
 [<EntryPoint>]
 let main argv = 
@@ -78,7 +83,8 @@ let main argv =
 
     match userChoice.ToLowerInvariant() with 
         | "run" -> runRankingProgram |> Async.RunSynchronously
-        | "show" -> showStats
+        | "show" -> showStats()
         | _ -> printfn "Unrecognized Input"
 
+    Console.ReadLine() |> ignore
     0
