@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="PersistentCollections.fs" />
     <Compile Include="Helpers.fs" />
+    <Compile Include="Stopwords.fs" />
     <Compile Include="Stemming.fs" />
     <Compile Include="Article.fs" />
     <None Include="packages.config" />
