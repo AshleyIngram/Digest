@@ -68,7 +68,7 @@
     <None Include="packages.config" />
     <None Include="app.config" />
     <Compile Include="ArticleSourceTests.fs" />
-    <Compile Include="StemmingTests.fs" />
+    <Compile Include="TextAnalysisHelpersTests.fs" />
     <Compile Include="PersistentCollectionsTests.fs" />
   </ItemGroup>
   <ItemGroup>

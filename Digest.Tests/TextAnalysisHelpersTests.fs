@@ -1,6 +1,6 @@
-﻿module Digest.TextAnalysis.Tests.StemmingTests
+﻿module Digest.TextAnalysis.Helpers.Tests
 
-open Digest.TextAnalysis.Stemming
+open Digest.TextAnalysis.Helpers
 open FsUnit.Xunit
 open Xunit
 
@@ -30,3 +30,8 @@ let ``Text is stemmed as a series of words``() =
 [<Fact>]
 let ``Stopwords are removed when stemming a sentence``() =
     "When I went to the shop, I went to go shopping" ==> [| "went"; "shop"; "went"; "go"; "shop" |]
+
+[<Fact>]
+let ``bagOfWords returns the frequency of stemmed words in a sentence``() =
+    let expectedValue = [| { word = "went"; frequency = 2 }; { word = "shop"; frequency = 2 }; { word = "go"; frequency = 1 } |]
+    "When I went to the shop, I went to go shopping" |> bagOfWords |> Seq.toArray |> should equal expectedValue
