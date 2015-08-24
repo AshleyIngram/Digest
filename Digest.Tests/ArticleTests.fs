@@ -2,13 +2,14 @@
 
 open System
 open Digest
+open Digest.Types
 open FsUnit.Xunit
 open Xunit
 
 [<Fact>]
 let ``Article.GetLinks gets URI of all links in a document``() =
     let html = "<a href=\"http://google.com\">Google</a><a href=\"http://bing.com\">Bing</a>"
-    let article = { Text = html }
+    let article = { Text = html; Uri = new Uri("http://example.com") }
     let links = Article.ExtractLinks(article) |> Seq.map(fun l -> l.AbsoluteUri)
     links |> Seq.length |> should equal 2
     links |> should contain "http://google.com/"
@@ -17,7 +18,7 @@ let ``Article.GetLinks gets URI of all links in a document``() =
 [<Fact>]
 let ``Article.GetLinks does not return a URI in the body of a document, just that in a href attribute``() =
     let html = "<a href=\"http://google.com\">Google</a>. http://bing.com"
-    let article = { Text = html }
+    let article = { Text = html; Uri = new Uri("http://example.com") }
     let links = Article.ExtractLinks(article) |> Seq.map(fun l -> l.AbsoluteUri)
     links |> Seq.length |> should equal 1
     links |> should contain "http://google.com/"

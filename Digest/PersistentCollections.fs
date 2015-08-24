@@ -21,17 +21,34 @@ type PersistentCollection<'t when 't : (new : unit -> 't)>(id, ns) =
         file.Write(fileContents, 0, fileContents.Length)
         file.Close()
 
+    member this.delete() =
+        File.Delete(filepath)
+
 type PersistentDictionary<'k, 'v when 'k : equality>(id) = 
     inherit PersistentCollection<Dictionary<'k, 'v>>(id, "_dict")
 
     let collection = base.getCollection()
 
-    member this.Set(key, value) =
+    member this.Add(key, value) =
         collection.Add(key, value) |> ignore
+        base.save(collection)
+    
+    member this.AddOrUpdate(key, value) =
+        if (collection.ContainsKey(key)) then
+            collection.Remove(key) |> ignore
+            collection.Add(key, value)
+        else
+            collection.Add(key, value) |> ignore
         base.save(collection)
 
     member this.Get(key) =
         collection.Item(key)
+
+    member this.GetOrDefault(key) =
+        try
+            Some(collection.Item(key))
+        with
+            | :? KeyNotFoundException -> None
 
     member this.Contains(key) =
         collection.ContainsKey(key)

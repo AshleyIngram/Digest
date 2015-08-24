@@ -64,13 +64,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PersistentCollectionsTests.fs" />
+    <Compile Include="TextHelpersTests.fs" />
+    <Compile Include="StateTests.fs" />
+    <Compile Include="TestClassificationTests.fs" />
     <Compile Include="ArticleTests.fs" />
+    <Compile Include="ArticleSourceTests.fs" />
     <None Include="packages.config" />
     <None Include="app.config" />
-    <Compile Include="ArticleSourceTests.fs" />
-    <Compile Include="TextAnalysisHelpersTests.fs" />
-    <Compile Include="PersistentCollectionsTests.fs" />
-    <Compile Include="TestClassificationTests.fs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Digest\Digest.fsproj">

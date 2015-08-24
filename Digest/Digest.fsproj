@@ -49,10 +49,12 @@
   </Choose>
   <Import Project="$(FSharpTargetsPath)" />
   <ItemGroup>
-    <Compile Include="PersistentCollections.fs" />
     <Compile Include="Helpers.fs" />
+    <Compile Include="PersistentCollections.fs" />
     <Compile Include="Stopwords.fs" />
+    <Compile Include="Types.fs" />
     <Compile Include="TextHelpers.fs" />
+    <Compile Include="State.fs" />
     <Compile Include="TextClassification.fs" />
     <Compile Include="Article.fs" />
     <Compile Include="ArticleSource.fs" />
