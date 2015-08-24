@@ -14,7 +14,7 @@ module Article =
             return { Text = content }
         }
 
-    let RankArticle article = 
+    let ClassifyArticle article = 
         0.0
 
     let ExtractLinks body = 

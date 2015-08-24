@@ -52,11 +52,12 @@
     <Compile Include="PersistentCollections.fs" />
     <Compile Include="Helpers.fs" />
     <Compile Include="Stopwords.fs" />
+    <Compile Include="TextHelpers.fs" />
+    <Compile Include="TextClassification.fs" />
     <Compile Include="Article.fs" />
+    <Compile Include="ArticleSource.fs" />
     <None Include="packages.config" />
     <None Include="app.config" />
-    <Compile Include="ArticleSource.fs" />
-    <Compile Include="TextHelpers.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FSharp.Control.AsyncSeq">
