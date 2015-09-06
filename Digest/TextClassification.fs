@@ -3,7 +3,7 @@
 open Digest.TextAnalysis.Helpers
 
 module NaiveBayesClassifier =
-    let classify(goodCount: int, badCount: int, goodPercentage: float) =
+    let Classify(goodCount: int, badCount: int, goodPercentage: float) =
         let totalOccurrences = goodCount + badCount
         let badProbability = float badCount / float totalOccurrences
         let goodProbability =  1.0 - badProbability

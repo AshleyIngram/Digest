@@ -7,7 +7,7 @@ open FSharp.Data
 
 let Create uri =
     async {
-        let! content = Helpers.downloadFromUri uri
+        let! content = Helpers.DownloadFromUri uri
         return { Text = content; Uri = uri; }
     }
 

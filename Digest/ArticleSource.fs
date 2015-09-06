@@ -11,11 +11,11 @@ type RedditTypeProvider = JsonProvider<"Data/SubredditListingExample.json">
 
 type RedditArticleSource(subreddit: string) =
     
-    let downloadRedditPage = 
+    let DownloadRedditPage = 
             let uri = sprintf "http://reddit.com/r/%s/hot.json" subreddit
             RedditTypeProvider.AsyncLoad(uri)
     
-    let getSubmissionLinks (redditPage: RedditTypeProvider.Root) =
+    let GetSubmissionLinks (redditPage: RedditTypeProvider.Root) =
         redditPage.Data.Children |> Seq.map (fun c -> c.Data.Url)
         
     member this.GetArticles() = (this :> IArticleSource).GetArticles() 
@@ -23,6 +23,6 @@ type RedditArticleSource(subreddit: string) =
     interface IArticleSource with
         member this.GetArticles() =
             async {
-                let! redditPage = downloadRedditPage
-                return redditPage |> getSubmissionLinks |> Seq.map(fun l -> new Uri(l))
+                let! redditPage = DownloadRedditPage
+                return redditPage |> GetSubmissionLinks |> Seq.map(fun l -> new Uri(l))
             }

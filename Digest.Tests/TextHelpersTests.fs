@@ -5,8 +5,8 @@ open Digest.Types
 open FsUnit.Xunit
 open Xunit
 
-let inline (=>) (x: string) (y: string) = x |> stemWord |> should equal y
-let inline (==>) (x: string) (y: string[]) = x |> stemText |> Seq.toArray |> should equal y
+let inline (=>) (x: string) (y: string) = x |> StemWord |> should equal y
+let inline (==>) (x: string) (y: string[]) = x |> StemText |> Seq.toArray |> should equal y
 
 [<Fact>]
 let ``Words should be stemmed to a common root``() =
@@ -35,4 +35,4 @@ let ``Stopwords are removed when stemming a sentence``() =
 [<Fact>]
 let ``bagOfWords returns the frequency of stemmed words in a sentence``() =
     let expectedValue = [| { Word = "went"; Frequency = 2 }; { Word = "shop"; Frequency = 2 }; { Word = "go"; Frequency = 1 } |]
-    "When I went to the shop, I went to go shopping" |> bagOfWords |> Seq.toArray |> should equal expectedValue
+    "When I went to the shop, I went to go shopping" |> BagOfWords |> Seq.toArray |> should equal expectedValue

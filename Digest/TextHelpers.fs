@@ -15,13 +15,13 @@ let private removePunctuation (s: string) =
 let private normalizeString (s: string) =
     s.ToLowerInvariant() |> removePunctuation
 
-let stemWord word = 
+let StemWord word = 
     word |> normalizeString |> stemmer.Stem
 
-let stemText (text: string) =
-    let stopwords = Stopwords.stopwords |> Array.map normalizeString
+let StemText (text: string) =
+    let stopwords = Stopwords |> Array.map normalizeString
     let notStopword w = (Array.exists (fun e -> e = w) stopwords) |> not
-    text.Split(' ') |> Seq.map stemWord |> Seq.filter notStopword
+    text.Split(' ') |> Seq.map StemWord |> Seq.filter notStopword
 
-let bagOfWords (text: string) =
-    stemText text |> Seq.countBy id |> Seq.map (fun (w, f) -> { Word = w; Frequency = f })
+let BagOfWords (text: string) =
+    StemText text |> Seq.countBy id |> Seq.map (fun (w, f) -> { Word = w; Frequency = f })

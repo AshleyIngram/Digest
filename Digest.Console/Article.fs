@@ -17,7 +17,7 @@ let Get uri =
                 return None
             | :? WebException as e when (e.Response :? HttpWebResponse) ->
                 let httpWebResponse = e.Response :?> HttpWebResponse
-                Trace.TraceWarning(Digest.Helpers.failedWebRequestString httpWebResponse)
+                Trace.TraceWarning(Digest.Helpers.FailedWebRequestString httpWebResponse)
                 return None
             | :? WebException as e ->
                 Trace.TraceWarning(e.ToString())

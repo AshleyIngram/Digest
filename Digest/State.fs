@@ -28,17 +28,17 @@ type State() =
     member this.SetRanking article rank = 
         classifications.AddOrUpdate(article.Uri, rank)
         let isGood = rank >= threshold
-        article.Text |> stemText |> Seq.iter (fun w -> this.UpdateWord w isGood)
+        article.Text |> StemText |> Seq.iter (fun w -> this.UpdateWord w isGood)
 
     member this.GetWordStats word = wordranks.Get word
 
     member this.GetArticleRank uri = classifications.Get uri
 
-    member this.GetArticleCount() = classifications.getCollection() |> Seq.length
+    member this.GetArticleCount() = classifications.GetCollection() |> Seq.length
 
-    member this.GetTopRecommended count = classifications.getCollection() |> Seq.sortBy (fun (KeyValue(k, v)) -> v) |> Seq.truncate count
+    member this.GetTopRecommended count = classifications.GetCollection() |> Seq.sortBy (fun (KeyValue(k, v)) -> v) |> Seq.truncate count
 
     member this.Delete() = 
-        queue.delete()
-        classifications.delete()
-        wordranks.delete()
+        queue.Delete()
+        classifications.Delete()
+        wordranks.Delete()

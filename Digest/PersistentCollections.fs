@@ -8,30 +8,30 @@ type PersistentCollection<'t when 't : (new : unit -> 't)>(id, ns) =
     let pickler = FsPickler.CreateBinary()
     let filepath = "storage/" + id + ns
     
-    member this.load() =
+    member this.Load() =
         let filestream = File.OpenRead(filepath)
         pickler.Deserialize<'t>(filestream)
 
-    member this.getCollection() = if (File.Exists(filepath)) then this.load() else new 't()
+    member this.GetCollection() = if (File.Exists(filepath)) then this.Load() else new 't()
     
-    member this.save(collection) = 
+    member this.Save(collection) = 
         let fileContents = pickler.Pickle collection
         Directory.CreateDirectory("storage") |> ignore
         let file = File.Create(filepath)
         file.Write(fileContents, 0, fileContents.Length)
         file.Close()
 
-    member this.delete() =
+    member this.Delete() =
         File.Delete(filepath)
 
 type PersistentDictionary<'k, 'v when 'k : equality>(id) = 
     inherit PersistentCollection<Dictionary<'k, 'v>>(id, "_dict")
 
-    let collection = base.getCollection()
+    let collection = base.GetCollection()
 
     member this.Add(key, value) =
         collection.Add(key, value) |> ignore
-        base.save(collection)
+        base.Save(collection)
     
     member this.AddOrUpdate(key, value) =
         if (collection.ContainsKey(key)) then
@@ -39,7 +39,7 @@ type PersistentDictionary<'k, 'v when 'k : equality>(id) =
             collection.Add(key, value)
         else
             collection.Add(key, value) |> ignore
-        base.save(collection)
+        base.Save(collection)
 
     member this.Get(key) =
         collection.Item(key)
@@ -56,11 +56,11 @@ type PersistentDictionary<'k, 'v when 'k : equality>(id) =
 type PersistentSet<'t>(id) = 
     inherit PersistentCollection<HashSet<'t>>(id, "_set")
 
-    let collection = base.getCollection()
+    let collection = base.GetCollection()
 
     member this.Add(value) =
         collection.Add(value) |> ignore
-        base.save(collection)
+        base.Save(collection)
 
     member this.Contains(value) =
         collection.Contains(value)
@@ -68,16 +68,16 @@ type PersistentSet<'t>(id) =
 type PersistentQueue<'t>(id) =
     inherit PersistentCollection<Queue<'t>>(id, "_queue")
 
-    let collection = base.getCollection()
+    let collection = base.GetCollection()
 
     member this.Enqueue(value) = 
         collection.Enqueue(value)
-        base.save(collection)
+        base.Save(collection)
 
     member this.Dequeue() =
         try 
             let value = collection.Dequeue()
-            base.save(collection)
+            base.Save(collection)
             Some(value)
         with
             | :? System.InvalidOperationException -> None

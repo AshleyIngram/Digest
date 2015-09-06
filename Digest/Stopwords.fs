@@ -1,6 +1,6 @@
 ﻿module Digest.TextAnalysis.Stopwords
 
-let stopwords = [|
+let Stopwords = [|
     "I";
     "a";
     "about";

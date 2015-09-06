@@ -11,5 +11,5 @@ let truncate places x =
 
 [<Fact>]
 let ``Naive Bayes algorithm returns correct probabilities for binary classification``() =
-    NaiveBayesClassifier.classify(10, 10, 0.5) |> should equal 0.5
-    NaiveBayesClassifier.classify(5, 360, 0.9) |> truncate 3 |> should equal 0.111
+    NaiveBayesClassifier.Classify(10, 10, 0.5) |> should equal 0.5
+    NaiveBayesClassifier.Classify(5, 360, 0.9) |> truncate 3 |> should equal 0.111
