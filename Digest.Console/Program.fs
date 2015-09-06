@@ -9,12 +9,12 @@ open Digest.ArticleSource
 open Digest.Helpers
 open Digest.PersistentCollections
 
-let rankingDictionary = new PersistentDictionary<Uri, double>("ArticleRanks")
+let state = new State()
 
-let enqueueUris(queue: PersistentQueue<Uri>, uris) = 
-    uris |> Seq.iter (fun q -> queue.Enqueue(q))
+let enqueueUris uris = 
+    uris |> Seq.iter (fun u -> state.QueueForProcessing u)
 
-let getArticle(uri) =
+let getArticle uri =
     async {
         try
             let! a = Article.Create uri
@@ -32,44 +32,47 @@ let getArticle(uri) =
                 return None
     }
 
-let processUri(uri) =
+let rankUri uri =
     async {
-        if (rankingDictionary.Contains(uri)) then
+        Trace.TraceInformation("Ranking " + uri.ToString())
+        if (state.HasProcessedArticle uri) then
             return Seq.empty
         else
-            let! a = getArticle(uri) 
+            let! a = getArticle uri
             match a with
                 | None -> return Seq.empty
                 | Some(article) ->
-                    let rank = Article.RankArticle(article)
-                    rankingDictionary.Set(uri, rank)
-                    return Article.ExtractLinks(article)
+                    let rank = Article.ClassifyArticle article
+                    state.SetRanking article rank
+                    return Article.ExtractLinks article
     }
 
-let rec processQueue(item, queue: PersistentQueue<Uri>) =
+
+let rec processQueue(item, processFunction) =
     async {
         match item with
             | Some(x) -> 
-                Trace.TraceInformation("Processing " + x.ToString())
-                let! uris = processUri(x)
-                enqueueUris(queue, uris)
-                return! processQueue(queue.Dequeue(), queue)
+                let moveNext i = processQueue(i, processFunction)
+                let! uris = processFunction x
+                enqueueUris uris
+                return! moveNext(state.GetNextUri())
             | None -> return ()
     }
 
-let runRankingProgram = async {
+let runProgram func = async {
     let uriQueue = new PersistentQueue<Uri>("ArticlesToProcess");
     let reddit = new RedditArticleSource("programming")
     let! uris = reddit.GetArticles()
-    enqueueUris(uriQueue, uris)
+    enqueueUris uris
 
-    return! processQueue(uriQueue.Dequeue(), uriQueue)
+    return! processQueue(uriQueue.Dequeue(), func)
 }
 
+let runRankingProgram = runProgram rankUri
+
 let showStats() = 
-    let dict = (new PersistentDictionary<Uri, double>("ArticleRanks")).getCollection()
-    let count = dict.Count
-    let top10 = dict |> Seq.sortBy (fun (KeyValue(k, v)) -> v) |> Seq.truncate 10
+    let count = state.GetArticleCount()
+    let top10 = state.GetTopRecommended 10
     printfn "Processed %d articles" count
     printfn "The top 10 articles are..."
     top10 |> Seq.map (fun(KeyValue(k, v)) -> k.ToString()) |> Seq.iter(fun (l) -> printfn "%s" l)

@@ -13,7 +13,7 @@ type State() =
 
     member this.QueueForProcessing uri = queue.Enqueue uri
 
-    member this.GetNextUri = queue.Dequeue
+    member this.GetNextUri() = queue.Dequeue()
 
     member this.HasProcessedArticle uri = classifications.Contains uri
 
@@ -33,6 +33,10 @@ type State() =
     member this.GetWordStats word = wordranks.Get word
 
     member this.GetArticleRank uri = classifications.Get uri
+
+    member this.GetArticleCount() = classifications.getCollection() |> Seq.length
+
+    member this.GetTopRecommended count = classifications.getCollection() |> Seq.sortBy (fun (KeyValue(k, v)) -> v) |> Seq.truncate count
 
     member this.Delete() = 
         queue.delete()
