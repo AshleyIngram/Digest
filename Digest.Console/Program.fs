@@ -2,35 +2,14 @@
 
 open System
 open System.Diagnostics
-open System.Net
 open Digest
-open Digest.Article
 open Digest.ArticleSource
-open Digest.Helpers
-open Digest.PersistentCollections
+open Digest.Console.Article
 
 let state = new State()
 
 let enqueueUris uris = 
     uris |> Seq.iter (fun u -> state.QueueForProcessing u)
-
-let getArticle uri =
-    async {
-        try
-            let! a = Article.Create uri
-            return Some(a)
-        with
-            | :? UriFormatException as e ->
-                Trace.TraceError(sprintf "Invalid URI: %s" e.Message)
-                return None
-            | :? WebException as e when (e.Response :? HttpWebResponse) ->
-                let httpWebResponse = e.Response :?> HttpWebResponse
-                Trace.TraceWarning(Digest.Helpers.failedWebRequestString httpWebResponse)
-                return None
-            | :? WebException as e ->
-                Trace.TraceWarning(e.ToString())
-                return None
-    }
 
 let rankUri uri =
     async {
@@ -38,7 +17,7 @@ let rankUri uri =
         if (state.HasProcessedArticle uri) then
             return Seq.empty
         else
-            let! a = getArticle uri
+            let! a = Article.Get uri
             match a with
                 | None -> return Seq.empty
                 | Some(article) ->
@@ -60,12 +39,11 @@ let rec processQueue(item, processFunction) =
     }
 
 let runProgram func = async {
-    let uriQueue = new PersistentQueue<Uri>("ArticlesToProcess");
     let reddit = new RedditArticleSource("programming")
     let! uris = reddit.GetArticles()
     enqueueUris uris
 
-    return! processQueue(uriQueue.Dequeue(), func)
+    return! processQueue(state.GetNextUri(), func)
 }
 
 let runRankingProgram = runProgram rankUri
